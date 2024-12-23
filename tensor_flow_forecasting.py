@@ -17,9 +17,9 @@ def create_sequences(data, seq_length, predict_length):
     return np.array(X), np.array(y)
 
 # load the dataset
-path = "D:/Pycharm Projects/Demos/skLearnDemo/btcusd_1-min_data.csv"
+path = "D:/Pycharm Projects/Demos/bitcoin_price_prediction/btcusd_daily_data.csv"
 data = pd.read_csv(path)
-data = data[::1440]
+# data = data[::1440]
 
 data.set_index('Timestamp', inplace=True)
 
